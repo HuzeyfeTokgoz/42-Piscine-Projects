@@ -68,6 +68,6 @@ int	main(int ac, char **av)
 			i++;
 		}
 		size--;
-	}		
+	}
 	ft_printf_av(ac, av);
 }

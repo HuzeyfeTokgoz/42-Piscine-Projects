@@ -10,25 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
+void	ft_putchar(char c);
 
 void	ft_print_line(char first, char mid, char last, int len)
 {
 	int	i;
 
-//	ft_putchar(first);
+	ft_putchar(first);
 	i = 1;
 	while (i <= len - 2)
 	{
-//		ft_putchar(mid);
+		ft_putchar(mid);
 		i++;
 	}
-//	if (len > 1)
-//		ft_putchar(last);
-//	ft_putchar('\n');
+	if (len > 1)
+		ft_putchar(last);
+	ft_putchar('\n');
 }
-
-void    ft_putchar(char c);
 
 void	rush(int x, int y)
 {
@@ -43,7 +41,7 @@ void	rush(int x, int y)
 		ft_print_line('B', ' ', 'B', x);
 		sira++;
 	}
-	if (sira > 1)
+	if (y > 1)
 	{
 		ft_print_line('A', 'B', 'C', x);
 	}
